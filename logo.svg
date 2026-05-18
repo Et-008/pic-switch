@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle / Badge -->
+  <circle cx="100" cy="100" r="90" fill="#EFF6FF"/>
+  
+  <!-- Image Frame -->
+  <rect x="40" y="50" width="120" height="100" rx="12" stroke="#2563EB" stroke-width="8"/>
+  
+  <!-- Decorative Image "Mountain" -->
+  <path d="M60 130L90 90L110 120L130 100L150 130" stroke="#94A3B8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Conversion Arrows -->
+  <g filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.1))">
+    <!-- Right Arrow -->
+    <path d="M85 75H115M115 75L105 65M115 75L105 85" stroke="#2563EB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Left Arrow -->
+    <path d="M115 125H85M85 125L95 115M85 125L95 135" stroke="#4F46E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Accent Dot -->
+  <circle cx="160" cy="40" r="10" fill="#2563EB"/>
+</svg>

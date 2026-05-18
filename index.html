@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Converter | Fast & Private</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Browser Image Converter - Free & Fast">
+  <meta name="description" content="Convert your images to PNG, JPEG, WebP, AVIF and more directly in your browser. No upload to server, completely private.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://picswitch.et-008.in/">
+  <meta property="og:title" content="Browser Image Converter - Free & Fast">
+  <meta property="og:description" content="Convert your images to PNG, JPEG, WebP, AVIF and more directly in your browser. No upload to server, completely private.">
+  <meta property="og:image" content="logo.png?text=Browser+Image+Converter">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://picswitch.et-008.in/">
+  <meta property="twitter:title" content="Browser Image Converter - Free & Fast">
+  <meta property="twitter:description" content="Convert your images to PNG, JPEG, WebP, AVIF and more directly in your browser. No upload to server, completely private.">
+  <meta property="twitter:image" content="logo.png?text=Browser+Image+Converter">
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #f3f4f6, #e5e7eb);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center p-4 md:p-8">
+
+  <div class="w-full max-w-2xl bg-white rounded-3xl shadow-2xl p-6 md:p-10 space-y-8 border border-gray-100">
+    
+    <div class="text-center space-y-2">
+      <div class="flex justify-center mb-4">
+        <img src="logo.svg" alt="Logo" class="w-20 h-20">
+      </div>
+      <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">
+        Image <span class="text-blue-600">Converter</span>
+      </h1>
+      <p class="text-gray-500 font-medium">Fast, private, and runs entirely in your browser.</p>
+    </div>
+
+    <div class="grid gap-6">
+      <!-- File Upload Area -->
+      <div class="flex flex-col gap-2">
+        <label class="text-sm font-semibold text-gray-700 ml-1">Upload Images</label>
+        <input 
+          multiple 
+          type="file" 
+          id="upload" 
+          accept="image/*"
+          class="block w-full text-sm text-slate-500
+          file:mr-4 file:py-2 file:px-4
+          file:rounded-full file:border-0
+          file:text-sm file:font-semibold
+          file:bg-blue-50 file:text-blue-700
+          hover:file:bg-blue-100
+          cursor-pointer transition-all"
+        >
+      </div>
+
+      <!-- Format Selection Area -->
+      <div class="flex flex-col gap-2">
+        <label class="text-sm font-semibold text-gray-700 ml-1">Target Format</label>
+        <select 
+          id="format" 
+          class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all cursor-pointer"
+        >
+          <option value="image/png">PNG</option>
+          <option value="image/jpeg">JPEG</option>
+          <option value="image/webp">WebP</option>
+          <option value="image/avif">AVIF</option>
+          <option value="image/gif">GIF (Static)</option>
+          <option value="image/svg+xml" disabled>SVG (Coming Soon)</option>
+        </select>
+      </div>
+
+      <!-- Convert Button -->
+      <button 
+        onclick="handleConvert()" 
+        class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform active:scale-95"
+      >
+        Convert Images
+      </button>
+    </div>
+
+    <!-- Download Results Area -->
+    <div id="download-container" class="flex flex-col gap-3 mt-8">
+      <!-- Links will be injected here by JS -->
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
